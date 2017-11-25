@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/add_donor.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span> 
+				    </button>
+			    	<a class="navbar-brand" href="index.html">IYW</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+				    <ul class="nav navbar-nav">
+					    <li><a href="index.html">Home</a></li>
+					    <li class="active"><a href="#">Add Donor</a></li>
+				    </ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid alignCenter">
+			<div class="jumbotron">
+		        <h1 class="top-margin">ADD A DONOR</h1>
+		        <p>Enter the details of new member of IYW family.</p>
+		    </div>
+		</div>
+		<div class="container-fluid">
+	      <section>
+	        <div class="well">
+	          <div class="container-fluid	">
+	            <form action="add_donor.html" class="form-horizontal">
+	              <div class="form-group">
+	                <label for="name">Name  </label>
+	                <input type="text" class="form-control" id="name" placeholder="Enter the name">
+	                <span id="errorFirstName" class="error  no-error">required</span>
+	              </div><hr>
+
+	              <div class="form-group">
+	                <label for="gender">Gender</label>
+	                <select  class="form-control" id="gender">
+	                  <option value="Select">Select gender</option>
+	                  <option value="Male">Male</option>
+	                  <option value="Female">Female</option>
+	                </select>
+	                <span id="errorGender" class="error no-error">required</span>
+	              </div><hr>
+
+	              <div class="form-group">
+	                <label for="address">Address</label>
+	                <input type="text" class="form-control" id="address" placeholder="Enter the address">
+	              </div><hr>
+
+	              <div class="form-group">
+	                <label for="mobile_no">Mobile number</label>
+	                <input type="text" class="form-control" id="mobile_no" placeholder="your mobile number">
+	                <span id="errorMobileNo" class="error no-error">required</span>
+	              </div><hr>
+
+	              <div class="form-group">
+	                	<label for="batch">Donations Clear Uptil</label>
+		                <select  class="form-control" id="year">
+		                  <option value="Select">Select year</option>
+		                  <option><script>document.write(new Date().getFullYear()-1)</script></option>
+		                  <option><script>document.write(new Date().getFullYear())</script></option>
+		                  <option><script>document.write(new Date().getFullYear()+1)</script></option>
+		                </select>
+		                <span id="errorBatch" class="error no-error">required</span> &nbsp;
+		                <select  class="form-control" id="month">
+		                  <option value="Select">Select month</option>
+		                  <option value="1">Jan</option>
+		                  <option value="2">Feb</option>
+		                  <option value="3">Mar</option>
+		                  <option value="4">Apr</option>
+		                  <option value="1">May</option>
+		                  <option value="6">Jun</option>
+		                  <option value="7">Jul</option>
+		                  <option value="8">Aug</option>
+		                  <option value="9">Sep</option>
+		                  <option value="10">Oct</option>
+		                  <option value="11">Nov</option>
+		                  <option value="12">Dec</option>
+		                </select>
+		                <span id="errorClass" class="error no-error">required</span>
+	              </div><hr>
+	              <div class="form-group">
+	                <label for="picture">Picture</label>
+	                <input id="displayPicture" type="file" name="pic" accept="image/*">
+	              </div><hr>
+	              <div class="text-center">
+	              	<input type="button" class="btn text-center text-white bg-black" onClick="validate()" value="Submit" />
+	              </div>
+	            </form>
+	          </div><!--End container-->
+	        </div><!--End well-->
+	      </section>
+	    </div>
+
+	    <!--footer-->
+	    <footer>
+	      <div class="footer container-fluid text-center bg-black">
+	        <p class="text-white" style="margin-top:10px;">
+	           IYW &copy; <span><script>document.write(new Date().getFullYear())</script> All Rights reserved.</span><br>Designed and developed by: <a class="text-white" style="font-weight: bold;" href="https://fb.com/sukhsagarsinghbatra">Sukhsagar Singh</a>
+	        </p>
+	      </div><!--End container-->
+	    </footer>
+
+		<!-- jQuery library -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+	    <!-- Latest compiled and minified JavaScript -->
+	    <script src="./js/bootstrap.min.js"></script>
+	    <script src="./js/app.js"></script>
+	    <script src="./js/add_donor.js"></script>
+	</body>
+</html>
