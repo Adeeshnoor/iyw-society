@@ -1038,7 +1038,8 @@ a {
   text-decoration: none;
 }
 a:focus, a:hover {
-  color: #23527c;
+  color: #fff;
+  font-weight: bold;
   text-decoration: underline;
 }
 a:focus {
@@ -2644,7 +2645,8 @@ select[multiple].input-lg, textarea.input-lg {
   outline-offset: -2px;
 }
 .btn.focus, .btn:focus, .btn:hover {
-  color: #333;
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
 }
 .btn.active, .btn:active {
